@@ -33,3 +33,41 @@ html {
   z-index: 20;
 }
 
+.scroller-plus-elem {
+  animation: scrollerPlus 30s linear infinite both;
+}
+
+.scroller-plus-elem > h1 {
+  margin-left: 2vw;
+  font-style: italic;
+}
+
+@keyframes scrollerPlus {
+  100% {
+    transform: translate(calc(100% + 2vw));
+  }
+}
+
+.scroller-minus-elem {
+  animation: scrollerMinus 40s linear infinite both;
+}
+
+.scroller-minus-elem > h1 {
+  margin-left: 2vw;
+  font-style: italic;
+}
+
+@keyframes scrollerMinus {
+  100% {
+    transform: translate(calc(-100% - 2vw));
+  }
+}
+
+.paused {
+  animation-play-state: paused;
+}
+
+.page6-img-container {
+  left: 50%;
+  transform: translateX(-50%);
+}
